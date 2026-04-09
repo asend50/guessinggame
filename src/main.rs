@@ -32,10 +32,10 @@ loop {
             println!("HOT, your guess was:{}", number);
         }else if diff >= 0 {
             println!("BOILING, your guess was:{}", number);
-        if number == random_int {
+        }if number == random_int {
         println!("You guessed correctly! The number was: {}", random_int);
         break;
     } else {
         }}
-    }}
+    }
 
