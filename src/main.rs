@@ -8,8 +8,8 @@ use rand::Rng;
 use std::io;
 
 fn main() {
-    let mut rng = rand::rng();
-    let random_int: i32 = rng.random_range(1..=100);
+    let mut rng = rand::rng(); // Generate a random value in the given range.
+    let random_int: i32 = rng.random_range(1..=100); // Generate a random value between 1 and 100
     println!("Welcome to the guessing game that picks a random number between 1 and 100, so you can guess it until you get it right!");
 loop {
     let mut input = String::new();
@@ -30,7 +30,7 @@ loop {
             println!("WARM, your guess was:{}", number);
         } else if diff >= 5 {
             println!("HOT, your guess was:{}", number);
-        }else if diff >= 0 {
+        }else if diff > 0 {
             println!("BOILING, your guess was:{}", number);
         }if number == random_int {
         println!("You guessed correctly! The number was: {}", random_int);
